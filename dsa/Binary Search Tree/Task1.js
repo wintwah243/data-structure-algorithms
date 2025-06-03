@@ -1,5 +1,6 @@
 // Binary Search Tree 
 
+// we will create Node class that can create a new tree node
 // binary tree ရဲ့ structureတစ်ခုcreateလုပ်လိုက်မယ်
 class Node{
     constructor(data, left = null, right = null){
@@ -21,11 +22,12 @@ class BST{
             return;
         }else{
             const searchTree = function(node){
+                // node is the current node and data is the value we're trying to insert
                 if(data < node.data){ // cယ်ရင်leftဘက်ကိုသွားမယ်
                     if(node.left === null){
                         node.left = new Node(data);
                         return;
-                    }else if(node.left !== null){
+                    }else if(node.left !== null){ // leftဘက်မှာnullမဖြစ်နေဘူး/valueထည့်မရဘူးဆိုရင်recursive functionပြန်ခေါ်
                         return searchTree(node.left);
                     }
                 }else if(data > node.data){ // ကြီးရင်rightဘက်ကိုသွားမယ်
@@ -33,7 +35,7 @@ class BST{
                         node.right = new Node(data);
                         return;
                     }else if(node.right !== null){
-                        return searchTree(node.right);
+                        return searchTree(node.right); // rightဘက်မှာnullမဖြစ်နေဘူး/valueထည့်မရဘူးဆိုရင်recursive functionပြန်ခေါ်
                     }
                 }else{
                     return null;
