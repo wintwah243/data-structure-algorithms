@@ -2,7 +2,7 @@
     Where to use hash tables? 
     We use hash tables when we need to look up something very quickly
     Hash table က Key-value pairတွေနဲ့အလုပ်လုပ်တယ်
-    same index ကို hashလုပ်မိရင် new arrayတစ်ခုတည်ဆောက်ပြီးcollision ကိုကာကွယ်တယ်
+    same index ကို hashလုပ်မိတာမျိုးမဖြစ်စေဖို့ new arrayတစ်ခုတည်ဆောက်ပြီးcollision ကိုကာကွယ်တယ်
 */
 
 var hash = (string, max) => { // max is for the size of the hash table
