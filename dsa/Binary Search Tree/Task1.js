@@ -15,6 +15,7 @@ class BST{
         this.root = null; // Initializes the tree
     }
 
+    // add new node method starts here
     add(data){
         const node = this.root; 
         if(node == null){
