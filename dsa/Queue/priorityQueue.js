@@ -1,5 +1,6 @@
 
-/* A Priority Queue is a data structure similar to a regular queue (FIFO), 
+/* 
+    A Priority Queue is a data structure similar to a regular queue (FIFO), 
     but each element has a priority 
 */
 
@@ -55,11 +56,11 @@ function PriorityQueue(){
 };
 
 var pq = new PriorityQueue();
-pq.enqueue(['John', 2]);
-pq.enqueue(['Tom', 3]);
-pq.enqueue(['Rose', 1]);
-pq.printCollection();
-pq.dequeue();
-pq.dequeue();
-pq.front();
-pq.printCollection();
+pq.enqueue(['John', 2]); // [ ['John', 2] ]
+pq.enqueue(['Tom', 3]); // [ ['John', 2], ['Tom', 3]  ]
+pq.enqueue(['Rose', 1]); // [ ['Rose', 1], ['John', 2], ['Tom', 3] ]
+pq.printCollection(); // [ ['Rose', 1], ['John', 2], ['Tom', 3] ]
+pq.dequeue(); // [ ['John', 2], ['Tom', 3]  ]
+pq.dequeue(); // [ ['Tom', 3] ]
+pq.front(); // [ ['Tom', 3] ]
+pq.printCollection(); // [ ['Tom', 3] ]
