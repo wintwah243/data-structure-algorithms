@@ -1,6 +1,9 @@
 /* this is Sets exericse */
 
-/* set operations: add, remove, union, intersection, difference, and subset. */
+/* 
+    set operations: add, remove, union, intersection, difference, and subset. 
+    Sets က duplicate values တေွ ပါလာရင် auto ignoreလုပ်တယ် (Removing duplicates) 
+*/
 
 function mySet(){
     //ဒီarryထဲကelementတွေကတစ်ခုနဲ့တစ်ခုမတူတဲ့unique valuesတွေဖြစ်ရမယ်ယ် 
