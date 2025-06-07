@@ -1,3 +1,10 @@
+/*
+    Stack is Last In, First Out
+    Stackကိုreverseတေွ undoတွေလုပ်တဲ့နေရာမှာသုံးတယ်
+    For example - In a text editor, when you press undo, the last action you did is reversed first.
+    this can be managed by a stack
+*/
+
 // stackတစ်ခုcreateလုပ်မယ်
 var Stack = function() {
     this.count = 0; // stackထဲမှာitemဘယ်နှစ်ခုရှိလဲဆိုတာကိ့ track‌ေပေးဖို့
@@ -15,7 +22,8 @@ var Stack = function() {
             return undefined;
         }
 
-        this.count--;
+       // indexက0ကစတာမို့လို့တစ်ခုလျော့ပေး
+        this.count--; // moves the top pointer one position down to the previous item
         var result = this.storage[this.count]; // we will fetch the top value
         delete this.storage[this.count];
         return result;
@@ -30,7 +38,7 @@ var Stack = function() {
 
     //return the value at the end of the stack
     this.peek = function(){
-        return this.storage[this.count - 1];
+        return this.storage[this.count - 1]; // indexက0ကစတာမို့လို့တစ်ခုလျော့ပေး
     }
 };
 
