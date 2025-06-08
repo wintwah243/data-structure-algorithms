@@ -83,10 +83,10 @@ function LinkedList() {
     };
 
     this.indexOf = function (element) {
-        var currentNode = head; // Start at the beginning of the list (the first node)
-        var index = -1; // indexက0ကစတာမို့လို့inital valueကို-1ထားပြီးincrementလုပ်သွား
+        var currentNode = head; // Start at the beginning of the list 
+        var index = -1; // indexက0ကစတာမို့လို့initial valueကို-1ထားပြီးincrementလုပ်သွား
 
-        while (currentNode) { // loop through untill currentNode becomes null
+        while (currentNode) { // loop through until currentNode becomes null
             index++; // Increase index as we move to the next node
 
             // Check if the current node contains the element we’re looking for
